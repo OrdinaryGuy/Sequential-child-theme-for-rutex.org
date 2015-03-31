@@ -1,0 +1,75 @@
+/*
+ Theme Name:   Sequential Child
+ Theme URI:    
+ Description:  Sequential Child Theme
+ Author:       Ordinary Guy
+ Author URI:   http://ordinaryguy.me
+ Template:     sequential
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, three-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  sequential-child
+*/
+
+/* Accordion Styles */
+.accordion {
+	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+}
+
+.accordion-title {
+	border-top: 1px solid #dbdbdb;
+	margin: 0;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.accordion-title:hover {
+}
+
+.accordion-title:first-child {
+	border: none;
+}
+
+.accordion-title.open {
+	cursor: default;
+}
+
+.accordion-title::before {
+	vertical-align: top;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	font-family: "Genericons";
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+	content: '\f510 ';
+}
+
+.accordion-title.open::before {
+	vertical-align: top;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	font-family: "Genericons";
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+	content: '\f50e ';
+}
+
+.accordion-content {
+	padding-bottom: 20px;
+}
+
+div.site-info, .entry-title {
+	display: none;
+}
+
+div.hero, div.front-page-block {
+	padding-top: 24px;
+}
